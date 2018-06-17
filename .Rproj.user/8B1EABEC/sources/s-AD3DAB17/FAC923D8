@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1529265341864.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "FAC923D8",
+    "lastKnownWriteTime" : 1529265923,
+    "last_content_update" : 1529265923660,
+    "path" : "~/Seafile/documents_colin/R/frankenstein/R/chock.R",
+    "project_path" : "R/chock.R",
+    "properties" : {
+        "cursorPosition" : "0,31",
+        "docOutlineVisible" : "0",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

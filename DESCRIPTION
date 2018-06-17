@@ -1,0 +1,17 @@
+Package: frankenstein
+Title: Bring your Shiny App back from the dead
+Version: 0.0.0.9000
+Authors@R: person('Colin', 'Fay', email = 'contact@colinfay.me', role = c('cre', 'aut'))
+Description: Bring your Shiny App back from the dead.
+License: MIT + file LICENSE
+LazyData: true
+URL: https://github.com/Thinkr-open/frankenstein
+BugReports: https://github.com/Thinkr-open/frankenstein/issues
+Encoding: UTF-8
+Imports: 
+    attempt,
+    shiny,
+    glue,
+    crayon,
+    yesno
+RoxygenNote: 6.0.1

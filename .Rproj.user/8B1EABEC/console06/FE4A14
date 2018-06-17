@@ -1,0 +1,36 @@
+]0;~/Seafile/documents_colin/R/frankenstein[?1034hMacBook-Pro-de-colin:frankenstein colin$ usethis::use_package("crayon")
+bash: syntax error near unexpected token `"crayon"'
+]0;~/Seafile/documents_colin/R/frankenstein[?1034hMacBook-Pro-de-colin:frankenstein colin$ [KMacBook-Pro-de-colin:frankenstein colin$ git init
+Initialized empty Git repository in /Users/colin/Seafile/documents_colin/R/frankenstein/.git/
+]0;~/Seafile/documents_colin/R/frankensteinMacBook-Pro-de-colin:frankenstein colin$ git commit -m "first commit"👶" 👶"
+On branch master
+
+Initial commit
+
+Untracked files:
+	[31m.DS_Store[m
+	[31m.RData[m
+	[31m.Rbuildignore[m
+	[31m.Rhistory[m
+	[31m.Rproj.user/[m
+	[31mCODE_OF_CONDUCT.md[m
+	[31mDESCRIPTION[m
+	[31mLICENSE[m
+	[31mLICENSE.md[m
+	[31mNAMESPACE[m
+	[31mNEWS.md[m
+	[31mR/[m
+	[31mREADME.Rmd[m
+	[31mREADME.md[m
+	[31mdata-raw/[m
+	[31mfrankenstein.Rproj[m
+	[31mman/[m
+	[31mreadme_fig/[m
+	[31mshiny_bookmarks/[m
+	[31mtestapp.R[m
+	[31mtests/[m
+
+nothing added to commit but untracked files present
+]0;~/Seafile/documents_colin/R/frankensteinMacBook-Pro-de-colin:frankenstein colin$ git commit -m "first commit 👶"init[K[K[K[K[Kadd /
+fatal: /: '/' is outside repository
+]0;~/Seafile/documents_colin/R/frankensteinMacBook-Pro-de-colin:frankenstein colin$ git add /[K.
