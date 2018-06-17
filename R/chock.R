@@ -24,10 +24,10 @@ chock <- function(scenario =  NULL){
         private$bookmarkedCallbacks$invoke(url)
       }
       else {
-        cat(green(glue("Saving state {id} at {Sys.time()}")), sep = "\n")
+        cat(crayon::green(glue::glue("Saving state {id} at {Sys.time()}")), sep = "\n")
       }
     }), error = function(e) {
-      cat(red(glue("Unabled to save the state")), sep = "\n")
+      cat(crayon::red(glue::glue("Unabled to save the state")), sep = "\n")
     })
   }
 }

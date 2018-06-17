@@ -58,12 +58,13 @@ Creature <- R6::R6Class("Creature",
                             } else {
                               server <- self$server
                             }
-                            ShinySession <- utils::getFromNamespace("ShinySession", "shiny")
+                            #ShinySession <- utils::getFromNamespace("ShinySession", "shiny")
                             
                             self$options$launch.browser <- function(appUrl){
-                              invisible(.Call("rs_shinyviewer", url, getwd(), 3))
+                              invisible(.Call("rs_shinyviewer", appUrl, getwd(), 3))
                             }
-                            ShinySession$set(
+                            
+                            shiny:::ShinySession$set(
                               which = "public",
                               name = "chock",
                               value = chock(),
@@ -129,9 +130,8 @@ Creature <- R6::R6Class("Creature",
                               } 
                             }
                             
-                            ShinySession <- utils::getFromNamespace("ShinySession", "shiny")
-                            
-                            ShinySession$set(
+                            #ShinySession <- utils::getFromNamespace("ShinySession", "shiny")
+                            shiny:::ShinySession$set(
                               which = "public",
                               name = "chock",
                               value = chock(),

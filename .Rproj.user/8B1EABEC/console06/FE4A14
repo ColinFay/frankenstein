@@ -34,3 +34,100 @@ nothing added to commit but untracked files present
 ]0;~/Seafile/documents_colin/R/frankensteinMacBook-Pro-de-colin:frankenstein colin$ git commit -m "first commit 👶"init[K[K[K[K[Kadd /
 fatal: /: '/' is outside repository
 ]0;~/Seafile/documents_colin/R/frankensteinMacBook-Pro-de-colin:frankenstein colin$ git add /[K.
+]0;~/Seafile/documents_colin/R/frankensteinMacBook-Pro-de-colin:frankenstein colin$ git add ./commit -m "first commit 👶"
+[master (root-commit) 68f52af] first commit 👶
+ 82 files changed, 2988 insertions(+)
+ create mode 100644 .DS_Store
+ create mode 100644 .RData
+ create mode 100644 .Rbuildignore
+ create mode 100644 .Rhistory
+ create mode 100644 .Rproj.user/8B1EABEC/console06/FE4A14
+ create mode 100644 .Rproj.user/8B1EABEC/console06/FE4A14.env
+ create mode 100644 .Rproj.user/8B1EABEC/console06/INDEX001
+ create mode 100644 .Rproj.user/8B1EABEC/cpp-definition-cache
+ create mode 100644 .Rproj.user/8B1EABEC/pcs/debug-breakpoints.pper
+ create mode 100644 .Rproj.user/8B1EABEC/pcs/files-pane.pper
+ create mode 100644 .Rproj.user/8B1EABEC/pcs/source-pane.pper
+ create mode 100644 .Rproj.user/8B1EABEC/pcs/windowlayoutstate.pper
+ create mode 100644 .Rproj.user/8B1EABEC/pcs/workbench-pane.pper
+ create mode 100644 .Rproj.user/8B1EABEC/persistent-state
+ create mode 100644 .Rproj.user/8B1EABEC/rmd-outputs
+ create mode 100644 .Rproj.user/8B1EABEC/saved_source_markers
+ create mode 100644 .Rproj.user/8B1EABEC/sources/prop/22B8063F
+ create mode 100644 .Rproj.user/8B1EABEC/sources/prop/55A79ACC
+ create mode 100644 .Rproj.user/8B1EABEC/sources/prop/6FB169F0
+ create mode 100644 .Rproj.user/8B1EABEC/sources/prop/87524BD3
+ create mode 100644 .Rproj.user/8B1EABEC/sources/prop/9C8C892
+ create mode 100644 .Rproj.user/8B1EABEC/sources/prop/CB39595A
+ create mode 100644 .Rproj.user/8B1EABEC/sources/prop/E4BB522D
+ create mode 100644 .Rproj.user/8B1EABEC/sources/prop/F5BF7629
+ create mode 100644 .Rproj.user/8B1EABEC/sources/prop/INDEX
+ create mode 100644 .Rproj.user/8B1EABEC/sources/s-AD3DAB17/15109F6C-contents
+ create mode 100644 .Rproj.user/8B1EABEC/sources/s-AD3DAB17/1AF21B3F-contents
+ create mode 100644 .Rproj.user/8B1EABEC/sources/s-AD3DAB17/237EF341-contents
+ create mode 100644 .Rproj.user/8B1EABEC/sources/s-AD3DAB17/57D9BD66-contents
+ create mode 100644 .Rproj.user/8B1EABEC/sources/s-AD3DAB17/5E5EE3EF-contents
+ create mode 100644 .Rproj.user/8B1EABEC/sources/s-AD3DAB17/631D40F3
+ create mode 100644 .Rproj.user/8B1EABEC/sources/s-AD3DAB17/631D40F3-contents
+ create mode 100644 .Rproj.user/8B1EABEC/sources/s-AD3DAB17/6ABDBD64-contents
+ create mode 100644 .Rproj.user/8B1EABEC/sources/s-AD3DAB17/76433F1
+ create mode 100644 .Rproj.user/8B1EABEC/sources/s-AD3DAB17/76433F1-contents
+ create mode 100644 .Rproj.user/8B1EABEC/sources/s-AD3DAB17/78539925-contents
+ create mode 100644 .Rproj.user/8B1EABEC/sources/s-AD3DAB17/84023832
+ create mode 100644 .Rproj.user/8B1EABEC/sources/s-AD3DAB17/84023832-contents
+ create mode 100644 .Rproj.user/8B1EABEC/sources/s-AD3DAB17/852BA706-contents
+ create mode 100644 .Rproj.user/8B1EABEC/sources/s-AD3DAB17/8DF95D8F-contents
+ create mode 100644 .Rproj.user/8B1EABEC/sources/s-AD3DAB17/8F5595C4
+ create mode 100644 .Rproj.user/8B1EABEC/sources/s-AD3DAB17/8F5595C4-contents
+ create mode 100644 .Rproj.user/8B1EABEC/sources/s-AD3DAB17/91C19260-contents
+ create mode 100644 .Rproj.user/8B1EABEC/sources/s-AD3DAB17/A083DB13-contents
+ create mode 100644 .Rproj.user/8B1EABEC/sources/s-AD3DAB17/ABBB0D2C-contents
+ create mode 100644 .Rproj.user/8B1EABEC/sources/s-AD3DAB17/AF4D74C1-contents
+ create mode 100644 .Rproj.user/8B1EABEC/sources/s-AD3DAB17/B7FA937E-contents
+ create mode 100644 .Rproj.user/8B1EABEC/sources/s-AD3DAB17/C5CDBF7A-contents
+ create mode 100644 .Rproj.user/8B1EABEC/sources/s-AD3DAB17/CCFE315F-contents
+ create mode 100644 .Rproj.user/8B1EABEC/sources/s-AD3DAB17/D1254EEF-contents
+ create mode 100644 .Rproj.user/8B1EABEC/sources/s-AD3DAB17/EA18C4C2-contents
+ create mode 100644 .Rproj.user/8B1EABEC/sources/s-AD3DAB17/F365E3DF-contents
+ create mode 100644 .Rproj.user/8B1EABEC/sources/s-AD3DAB17/FAC923D8
+ create mode 100644 .Rproj.user/8B1EABEC/sources/s-AD3DAB17/FAC923D8-contents
+ create mode 100644 .Rproj.user/8B1EABEC/sources/s-AD3DAB17/lock_file
+ create mode 100644 .Rproj.user/shared/notebooks/5972E819-README/1/8B1EABEC8B43C756/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/5972E819-README/1/8B1EABECAD3DAB17/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/5972E819-README/1/s/chunks.json
+ create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 .Rproj.user/shared/notebooks/paths
+ create mode 100644 CODE_OF_CONDUCT.md
+ create mode 100644 DESCRIPTION
+ create mode 100644 LICENSE
+ create mode 100644 LICENSE.md
+ create mode 100644 NAMESPACE
+ create mode 100644 NEWS.md
+ create mode 100644 R/chock.R
+ create mode 100644 R/frankenstein.R
+ create mode 100644 R/surgery.R
+ create mode 100644 README.Rmd
+ create mode 100644 README.md
+ create mode 100644 data-raw/devstuffs.R
+ create mode 100644 frankenstein.Rproj
+ create mode 100644 man/Creature.Rd
+ create mode 100644 readme_fig/every_second.png
+ create mode 100644 readme_fig/save_state.png
+ create mode 100644 shiny_bookmarks/0a12f58440b83ba8/input.rds
+ create mode 100644 shiny_bookmarks/2d70fbbce8aa7770/input.rds
+ create mode 100644 shiny_bookmarks/3fe0ae7e6bae16d0/input.rds
+ create mode 100644 shiny_bookmarks/f0de8671967d0078/input.rds
+ create mode 100644 testapp.R
+ create mode 100644 tests/testthat.R
+]0;~/Seafile/documents_colin/R/frankensteinMacBook-Pro-de-colin:frankenstein colin$ git remote add origin https://github.com/ThinkR-open/frankenstein.git
+]0;~/Seafile/documents_colin/R/frankensteinMacBook-Pro-de-colin:frankenstein colin$ git push -u origin master
+Counting objects: 81, done.
+Delta compression using up to 4 threads.
+Compressing objects:   1% (1/67)   Compressing objects:   2% (2/67)   Compressing objects:   4% (3/67)   Compressing objects:   5% (4/67)   Compressing objects:   7% (5/67)   Compressing objects:   8% (6/67)   Compressing objects:  10% (7/67)   Compressing objects:  11% (8/67)   Compressing objects:  13% (9/67)   Compressing objects:  14% (10/67)   Compressing objects:  16% (11/67)   Compressing objects:  17% (12/67)   Compressing objects:  19% (13/67)   Compressing objects:  20% (14/67)   Compressing objects:  22% (15/67)   Compressing objects:  23% (16/67)   Compressing objects:  25% (17/67)   Compressing objects:  26% (18/67)   Compressing objects:  28% (19/67)   Compressing objects:  29% (20/67)   Compressing objects:  31% (21/67)   Compressing objects:  32% (22/67)   Compressing objects:  34% (23/67)   Compressing objects:  35% (24/67)   Compressing objects:  37% (25/67)   Compressing objects:  38% (26/67)   Compressing objects:  40% (27/67)   Compressing objects:  41% (28/67)   Compressing objects:  43% (29/67)   Compressing objects:  44% (30/67)   Compressing objects:  46% (31/67)   Compressing objects:  47% (32/67)   Compressing objects:  49% (33/67)   Compressing objects:  50% (34/67)   Compressing objects:  52% (35/67)   Compressing objects:  53% (36/67)   Compressing objects:  55% (37/67)   Compressing objects:  56% (38/67)   Compressing objects:  58% (39/67)   Compressing objects:  59% (40/67)   Compressing objects:  61% (41/67)   Compressing objects:  62% (42/67)   Compressing objects:  64% (43/67)   Compressing objects:  65% (44/67)   Compressing objects:  67% (45/67)   Compressing objects:  68% (46/67)   Compressing objects:  70% (47/67)   Compressing objects:  71% (48/67)   Compressing objects:  73% (49/67)   Compressing objects:  74% (50/67)   Compressing objects:  76% (51/67)   Compressing objects:  77% (52/67)   Compressing objects:  79% (53/67)   Compressing objects:  80% (54/67)   Compressing objects:  82% (55/67)   Compressing objects:  83% (56/67)   Compressing objects:  85% (57/67)   Compressing objects:  86% (58/67)   Compressing objects:  88% (59/67)   Compressing objects:  89% (60/67)   Compressing objects:  91% (61/67)   Compressing objects:  92% (62/67)   Compressing objects:  94% (63/67)   Compressing objects:  95% (64/67)   Compressing objects:  97% (65/67)   Compressing objects:  98% (66/67)   Compressing objects: 100% (67/67)   Compressing objects: 100% (67/67), done.
+Writing objects:   1% (1/81)   Writing objects:   2% (2/81)   Writing objects:   3% (3/81)   Writing objects:   4% (4/81)   Writing objects:   6% (5/81)   Writing objects:   7% (6/81)   Writing objects:   8% (7/81)   Writing objects:   9% (8/81)   Writing objects:  11% (9/81)   Writing objects:  12% (10/81)   Writing objects:  13% (11/81)   Writing objects:  14% (12/81)   Writing objects:  16% (13/81)   Writing objects:  17% (14/81)   Writing objects:  18% (15/81)   Writing objects:  19% (16/81)   Writing objects:  20% (17/81)   Writing objects:  22% (18/81)   Writing objects:  23% (19/81)   Writing objects:  24% (20/81)   Writing objects:  25% (21/81)   Writing objects:  27% (22/81)   Writing objects:  28% (23/81)   Writing objects:  29% (24/81)   Writing objects:  30% (25/81)   Writing objects:  32% (26/81)   Writing objects:  33% (27/81)   Writing objects:  34% (28/81)   Writing objects:  35% (29/81)   Writing objects:  37% (30/81)   Writing objects:  38% (31/81)   Writing objects:  39% (32/81)   Writing objects:  40% (33/81)   Writing objects:  41% (34/81)   Writing objects:  43% (35/81)   Writing objects:  44% (36/81)   Writing objects:  45% (37/81)   Writing objects:  48% (39/81)   Writing objects:  49% (40/81)   Writing objects:  50% (41/81)   Writing objects:  51% (42/81)   Writing objects:  53% (43/81)   Writing objects:  54% (44/81)   Writing objects:  56% (46/81)   Writing objects:  58% (47/81)   Writing objects:  59% (48/81)   Writing objects:  60% (49/81)   Writing objects:  61% (50/81)   Writing objects:  62% (51/81)   Writing objects:  64% (52/81)   Writing objects:  65% (53/81)   Writing objects:  66% (54/81)   Writing objects:  67% (55/81)   Writing objects:  69% (56/81)   Writing objects:  70% (57/81)   Writing objects:  71% (58/81)   Writing objects:  72% (59/81)   Writing objects:  74% (60/81)   Writing objects:  75% (61/81)   Writing objects:  76% (62/81)   Writing objects:  77% (63/81)   Writing objects:  79% (64/81)   Writing objects:  80% (65/81)   Writing objects:  81% (66/81)   Writing objects:  82% (67/81)   Writing objects:  83% (68/81)   Writing objects:  85% (69/81)   Writing objects:  86% (70/81)   Writing objects:  87% (71/81)   Writing objects:  88% (72/81)   Writing objects:  90% (73/81)   Writing objects:  91% (74/81)   Writing objects:  91% (74/81), 1.07 MiB | 533.00 KiB/s   Writing objects:  91% (74/81), 1.19 MiB | 402.00 KiB/s   Writing objects:  92% (75/81), 1.19 MiB | 402.00 KiB/s   Writing objects:  93% (76/81), 1.19 MiB | 402.00 KiB/s   Writing objects:  95% (77/81), 1.19 MiB | 402.00 KiB/s   Writing objects:  96% (78/81), 1.19 MiB | 402.00 KiB/s   Writing objects:  97% (79/81), 1.19 MiB | 402.00 KiB/s   Writing objects:  98% (80/81), 1.19 MiB | 402.00 KiB/s   Writing objects: 100% (81/81), 1.19 MiB | 402.00 KiB/s   Writing objects: 100% (81/81), 1.22 MiB | 408.00 KiB/s, done.
+Total 81 (delta 10), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/10)   [Kremote: Resolving deltas:  10% (1/10)   [Kremote: Resolving deltas:  20% (2/10)   [Kremote: Resolving deltas:  30% (3/10)   [Kremote: Resolving deltas:  60% (6/10)   [Kremote: Resolving deltas:  70% (7/10)   [Kremote: Resolving deltas:  80% (8/10)   [Kremote: Resolving deltas:  90% (9/10)   [Kremote: Resolving deltas: 100% (10/10)   [Kremote: Resolving deltas: 100% (10/10), done.[K
+To https://github.com/ThinkR-open/frankenstein.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+[KMacBook-Pro-de-colin:frankenstein colin$ git push -u origin masterremote add origin https://github.com/ThinkR-open/frankenstein.git[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[39Pcommit -m "first commit 👶"add .[Kcommit -m "first commit 👶"add .[K

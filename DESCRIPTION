@@ -8,9 +8,10 @@ LazyData: true
 URL: https://github.com/Thinkr-open/frankenstein
 BugReports: https://github.com/Thinkr-open/frankenstein/issues
 Encoding: UTF-8
+Depends:     
+    shiny
 Imports: 
     attempt,
-    shiny,
     glue,
     crayon,
     yesno
