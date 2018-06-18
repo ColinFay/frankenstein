@@ -14,6 +14,7 @@
 #' }
 #'
 #' @importFrom R6 R6Class
+#' @importFrom yesno yesno
 #' @export
 #'
 
