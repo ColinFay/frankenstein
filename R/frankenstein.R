@@ -58,7 +58,6 @@ Creature <- R6::R6Class("Creature",
                             } else {
                               server <- self$server
                             }
-                            #ShinySession <- utils::getFromNamespace("ShinySession", "shiny")
                             
                             self$options$launch.browser <- function(appUrl){
                               invisible(.Call("rs_shinyviewer", appUrl, getwd(), 3))
@@ -102,11 +101,11 @@ Creature <- R6::R6Class("Creature",
                             }
 
                             if (!is.null(id)){
-                              browser()
                               a <- list.files(self$scenario)
                               stop_if_not(id, ~ .x %in% a, "Id not found")
                               cat( crayon::green( glue::glue( "Launching from id : {id}" ) ), "\n")
                               Sys.sleep(1)
+                              
                               self$options$launch.browser <- function(appUrl){
                                 
                                 url <- glue::glue('{appUrl}/?_state_id_={id}')
@@ -125,12 +124,11 @@ Creature <- R6::R6Class("Creature",
                                 
                                 self$options$launch.browser <- function(appUrl){
                                   url <- glue::glue('{appUrl}/?_state_id_={last_state}')
-                                  utils::browseURL(url)
+                                  invisible(.Call("rs_shinyviewer", url, getwd(), 3))
                                 }
                               } 
                             }
                             
-                            #ShinySession <- utils::getFromNamespace("ShinySession", "shiny")
                             shiny:::ShinySession$set(
                               which = "public",
                               name = "chock",

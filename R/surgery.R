@@ -11,12 +11,17 @@ record <- function(session){
 #' @importFrom shiny reactiveTimer observe
 #' 
 #' @export
-monitor <- function(session, intervalMs){
+monitor <- function(session, intervalMs, with_flush = TRUE, folder = "shiny_bookmarks"){
   autoInvalidate <- reactiveTimer(intervalMs)
   observe({
     autoInvalidate()
     attempt(session$chock(), 
             "Unable to save the state.\nDid you call `record` from outside a Frankenstein instance?")
+    last_state <- get_last_state(folder)
+    a <- list.files(folder, full.names = TRUE)
+    a <- a[!grepl(last_state, a)]
+    x <- lapply(a, unlink, recursive = TRUE)
+    invisible(x)
   })
 }
 
