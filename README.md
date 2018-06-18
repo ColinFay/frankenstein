@@ -7,7 +7,14 @@
 
 > Disclaimer: this is still highly experimental
 
-{frankenstein} allows you to bring your shiny app back from the dead.
+{frankenstein} allows you to bring your shiny app back from the
+dead.
+
+<div data-align="center">
+
+<img src = "https://media.giphy.com/media/YEL7FJP6ed008/giphy.gif"></img>
+
+</div>
 
 ## Installation
 
@@ -66,7 +73,6 @@ shinyApp(ui, server)
 You’ll have to turn it to :
 
 ``` r
-library(shiny)
 
 ui_req <- function(request) {
   fluidPage(
@@ -159,10 +165,13 @@ with :
 ``` r
 johndoe$list_states()
 #>                 id  last_modified_time
-#> 1 3fe0ae7e6bae16d0 2018-06-17 22:19:36
-#> 2 2d70fbbce8aa7770 2018-06-17 22:19:35
-#> 3 0a12f58440b83ba8 2018-06-17 22:19:34
-#> 4 f0de8671967d0078 2018-06-17 22:19:33
+#> 1 63d9f8fcac13bf0d 2018-06-17 22:52:40
+#> 2 bd3cdfa8dba957c1 2018-06-17 22:51:49
+#> 3 50b5700711605123 2018-06-17 22:50:57
+#> 4 3fe0ae7e6bae16d0 2018-06-17 22:19:36
+#> 5 2d70fbbce8aa7770 2018-06-17 22:19:35
+#> 6 0a12f58440b83ba8 2018-06-17 22:19:34
+#> 7 f0de8671967d0078 2018-06-17 22:19:33
 ```
 
 ### Revive old shiny states
@@ -205,6 +214,10 @@ server_record <- function(input, output, session) {
   })
 }
 ```
+
+To be more efficient memory-wise, `monitor()` only keeps the last states
+by default, and flush all the others. You can prevent this behavior by
+turning `dispose` to FALSE.
 
 Note that this example will save a state each second.
 
@@ -278,10 +291,6 @@ server <- function(input, output, session){
 
 johndoe$as_fresh(ui, server)
 ```
-
-## TO DO 
-
-+ Allow recording to several folders to create scenarios
 
 ## CoC
 

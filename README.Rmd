@@ -22,6 +22,7 @@ knitr::opts_chunk$set(
 
 {frankenstein} allows you to bring your shiny app back from the dead. 
 
+<div align = "center"><img src = "https://media.giphy.com/media/YEL7FJP6ed008/giphy.gif"></img></div>
 
 ## Installation
 
@@ -72,7 +73,6 @@ shinyApp(ui, server)
 You'll have to turn it to : 
 
 ```{r eval = TRUE}
-library(shiny)
 
 ui_req <- function(request) {
   fluidPage(
@@ -201,6 +201,8 @@ server_record <- function(input, output, session) {
   })
 }
 ```
+
+To be more efficient memory-wise, `monitor()` only keeps the last states by default, and flush all the others. You can prevent this behavior by turning `dispose` to FALSE. 
 
 Note that this example will save a state each second.
 
