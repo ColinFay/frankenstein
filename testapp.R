@@ -1,6 +1,4 @@
-library(shiny)
-
-ui <- function(request) {
+ui_req <- function(request) {
   fluidPage(
     textInput("txt", "Enter text"),
     checkboxInput("caps", "Capitalize"),
@@ -9,19 +7,11 @@ ui <- function(request) {
   )
 }
 
-# ui <- fluidPage(
-#     textInput("txt", "Enter text"),
-#     checkboxInput("caps", "Capitalize"),
-#     verbatimTextOutput("out"),
-#     actionButton("fo","fo")
-# )
-
-
 server <- function(input, output, session) {
   observeEvent(input$fo, {
-    session$chock()
+    record(session)
   })
-
+  
   output$out <- renderText({
     if (input$caps)
       toupper(input$txt)
@@ -29,5 +19,7 @@ server <- function(input, output, session) {
       input$txt
   })
 }
+library(frankenstein)
 
-frankenstein(ui, server)
+johndoe <- Creature$new(ui_req, server)
+johndoe$as_fresh()
