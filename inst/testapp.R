@@ -1,3 +1,4 @@
+
 library(shiny)
 
 ui_req <- function(request) {
@@ -26,3 +27,4 @@ library(frankenstein)
 johndoe <- Creature$new(ui_req, server)
 johndoe$as_fresh()
 johndoe$revive()
+
