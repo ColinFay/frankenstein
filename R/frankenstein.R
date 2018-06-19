@@ -14,6 +14,11 @@
 #' }
 #'
 #' @importFrom R6 R6Class
+#' @importFrom yesno yesno
+#' @importFrom attempt stop_if_not
+#' @importFrom shiny shinyApp
+#' @importFrom glue glue
+#' @importFrom crayon yellow green
 #' @export
 #'
 
@@ -30,7 +35,7 @@ Creature <- R6::R6Class("Creature",
                                                 server = NULL, 
                                                 options = list()
                                                 ){
-                            attempt::stop_if_not(ui, is.function, 
+                            stop_if_not(ui, is.function, 
                                                  "ui should be a function with `request` as argument")
                             self$ui <- ui
                             self$server <- server 
@@ -69,7 +74,7 @@ Creature <- R6::R6Class("Creature",
                               value = chock(),
                               overwrite = TRUE)
                             
-                            shiny::shinyApp(ui, server, 
+                            shinyApp(ui, server, 
                                      self$onStart, self$options, 
                                      self$uiPattern, self$enableBookmarking)
                             
@@ -103,27 +108,27 @@ Creature <- R6::R6Class("Creature",
                             if (!is.null(id)){
                               a <- list.files(self$scenario)
                               stop_if_not(id, ~ .x %in% a, "Id not found")
-                              cat( crayon::green( glue::glue( "Launching from id : {id}" ) ), "\n")
+                              cat( green( glue::glue( "Launching from id : {id}" ) ), "\n")
                               Sys.sleep(1)
                               
                               self$options$launch.browser <- function(appUrl){
                                 
-                                url <- glue::glue('{appUrl}/?_state_id_={id}')
+                                url <- glue('{appUrl}/?_state_id_={id}')
                                 invisible(.Call("rs_shinyviewer", url, getwd(), 3))
                               }
                             } else {
                               last_state <- get_last_state(self$scenario)
                               if (last_state == 0){
-                                cat(crayon::green("No previous state found"), "\n")
+                                cat(green("No previous state found"), "\n")
                                 Sys.sleep(1)
-                                cat(crayon::yellow("Launching the App"), "\n")
+                                cat(yellow("Launching the App"), "\n")
                               } else {
-                                cat( crayon::green( glue::glue( "Last id found : {last_state}" ) ), "\n")
+                                cat( green( glue( "Last id found : {last_state}" ) ), "\n")
                                 Sys.sleep(1)
-                                cat(crayon::yellow("Launching the App"), "\n")
+                                cat(yellow("Launching the App"), "\n")
                                 
                                 self$options$launch.browser <- function(appUrl){
-                                  url <- glue::glue('{appUrl}/?_state_id_={last_state}')
+                                  url <- glue('{appUrl}/?_state_id_={last_state}')
                                   invisible(.Call("rs_shinyviewer", url, getwd(), 3))
                                 }
                               } 
@@ -135,7 +140,7 @@ Creature <- R6::R6Class("Creature",
                               value = chock(),
                               overwrite = TRUE)
                             
-                            shiny::shinyApp(ui, server, 
+                            shinyApp(ui, server, 
                                      self$onStart, self$options, 
                                      self$uiPattern, self$enableBookmarking)
                             
@@ -159,7 +164,7 @@ Creature <- R6::R6Class("Creature",
                           }, 
                           
                           dispose = function(folder = "shiny_bookmarks", save_last = TRUE){
-                            if (yesno::yesno("This function will recursively remove all files from ", folder, ". Are you sure?")) {
+                            if (yesno("This function will recursively remove all files from ", folder, ". Are you sure?")) {
                               if(save_last){
                                 last_state <- get_last_state(folder)
                                 a <- list.files(folder, full.names = TRUE)
