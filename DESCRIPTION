@@ -4,14 +4,15 @@ Version: 0.0.0.9000
 Authors@R: person('Colin', 'Fay', email = 'contact@colinfay.me', role = c('cre', 'aut'))
 Description: Bring your Shiny App back from the dead.
 License: MIT + file LICENSE
-LazyData: true
 URL: https://github.com/Thinkr-open/frankenstein
 BugReports: https://github.com/Thinkr-open/frankenstein/issues
-Encoding: UTF-8
 Imports: 
-    shiny,
     attempt,
-    glue,
     crayon,
+    glue,
+    R6,
+    shiny,
     yesno
+Encoding: UTF-8
+LazyData: true
 RoxygenNote: 6.0.1
