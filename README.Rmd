@@ -70,7 +70,7 @@ server <- function(input, output, session) {
 shinyApp(ui, server)
 ```
 
-You'll have to turn it to : 
+You'll have to turn it to: 
 
 ```{r eval = TRUE}
 
@@ -104,7 +104,7 @@ Note that the ui as function also works when calling shinyApp (but the `session$
 shinyApp(ui_req, server)
 ```
 
-### The Creature Object : 
+### The Creature Object: 
 
 This object creates a new Frankenstein Creature from your ui and server: 
 
@@ -147,7 +147,7 @@ johndoe <- Creature$new(ui_req, server)
 
 A use case example would be to put this `record` in a "next" button on a shiny Dashboard, so that every time you move to another tab, the current state is saved. 
 
-You can then run your app as fresh with : 
+You can then run your app as fresh with: 
 
 ```{r}
 johndoe$as_fresh()
@@ -156,7 +156,7 @@ johndoe$as_fresh()
 
 ![](readme_fig/save_state.png)
 
-You now have a list of states in your console, which you can get back with : 
+You now have a list of states in your console, which you can get back with: 
 
 ```{r eval = TRUE}
 johndoe$list_states()
